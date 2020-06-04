@@ -139,6 +139,11 @@ _cogl_gl_util_get_texture_target_string (CoglTextureType texture_type,
       target_string = "2DRect";
       tex_coord_swizzle = "st";
       break;
+
+    default:
+      target_string = NULL;
+      tex_coord_swizzle = NULL;
+      break;
     }
 
   if (target_string_out)
