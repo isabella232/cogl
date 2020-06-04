@@ -174,7 +174,9 @@ _cogl_init (void)
 #endif
 
 #ifdef COGL_HAS_GTYPE_SUPPORT
+#if !GLIB_CHECK_VERSION (2, 36, 0)
       g_type_init ();
+#endif
 #endif
 
       _cogl_config_read ();
