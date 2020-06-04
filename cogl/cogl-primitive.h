@@ -272,8 +272,7 @@ cogl_primitive_new_with_attributes (CoglVerticesMode mode,
  * @mode: A #CoglVerticesMode defining how to draw the vertices
  * @n_vertices: The number of vertices to read from @data and also
  *              the number of vertices to read when later drawing.
-
- * @data: (array length=n_vertices): (type Cogl.VertexP2): An array
+ * @data: (array length=n_vertices) (type Cogl.VertexP2): An array
  *        of #CoglVertexP2 vertices
  *
  * Provides a convenient way to describe a primitive, such as a single
